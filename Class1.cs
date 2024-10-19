@@ -13,6 +13,11 @@ namespace Better_paint
 {
     internal class MatMethod
     {
+        public void test(out string s)
+        {
+            s = "gg";
+            return;
+        }
         //public string test { get; set; } = "owo";
         public Mat canvas { get; set; }
         public void UpdatePicturebox(PictureBox target,string filePath = "")

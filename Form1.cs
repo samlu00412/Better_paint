@@ -11,9 +11,12 @@ using OpenCvSharp.Extensions;
 using OpenCvSharp;
 namespace Better_paint {
     public partial class Form1 : Form {
+        string temp = "123";
         MatMethod PictureBoxHelper = new MatMethod();
         public Form1() {
             InitializeComponent();
+            PictureBoxHelper.test(out temp);
+            label1.Text= temp;
         }
         private void Open_Click(object sender, EventArgs e)
         {
